@@ -1,4 +1,4 @@
-# Datateks tehniskā uzdevums realizācija
+# Datateks tehniskā uzdevuma realizācija
 
 Install
 ---
