@@ -1,9 +1,24 @@
 <?php
 
-namespace rkistaps\classes;
-
+// use composer autoloader
 require 'vendor/autoload.php';
 
-$test = new Test;
+// create main app
+$app = new rkistaps\classes\App;
 
-$test->output();
+// define data source interface
+$url = 'https://www.serveris.lv/cms/test.json';
+$downloader = new rkistaps\classes\JsonDataDownloader($url);
+
+// load data
+$app->loadData($downloader);
+
+// define format class
+$format = new rkistaps\classes\DefaultXmlFormat;
+
+// define response class
+$output = new rkistaps\classes\XmlOutput($format);
+
+// respond
+$app->output($output);
+
