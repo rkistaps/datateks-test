@@ -1,0 +1,15 @@
+{
+    "name": "rkistaps/psr4",
+    "authors": [
+        {
+            "name": "kristaps taube",
+            "email": "kristaps.taube@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "rkistaps\\": "src/"      
+        }
+    },
+    "require": {}
+}
